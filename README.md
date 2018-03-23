@@ -11,8 +11,8 @@
 * Clone or download the repo
 * Type `npm install`
   * If you get an error on install, don't panic. It should still work.
-* Type `npm run start`
 * Type `truffle compile` and `truffle migrate`
+* Type `npm run start`
 * Put on a pair of sunglasses and bask in your blockchain glory. :beer:
 
 ### Testing
