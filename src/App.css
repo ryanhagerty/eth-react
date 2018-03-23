@@ -1,0 +1,210 @@
+/* Page Styles. */
+
+/* Typography. */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Rubik', 'Arial Narrow', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-size: 90px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+strong {
+  font-family: 'Rubik', 'Arial Narrow', sans-serif;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1000px;
+  padding: 25px 20px;
+}
+
+/* Topbar. */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  width: 100%;
+  z-index: 1;
+  background: #333333;
+}
+
+.title-link {
+  margin-right: 16px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.title-link:hover,
+.title-link:active,
+.title-link:focus {
+  color: #D26451;
+}
+
+/* Info box with contract address. */
+.notice-box {
+  padding: 5px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #ffffff;
+  background: #3A833A;
+}
+
+.contract-status {
+  margin-top: 25px;
+  padding: 25px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  background: #ececec;
+}
+
+.contract-address {
+  display: block;
+  font-size: 21px;
+  font-family: 'Rubik', 'Arial Narrow', sans-serif;
+}
+
+.message {
+  margin: 30px 0 0;
+  text-align: center;
+}
+
+.hello-world {
+  display: block;
+  font-size: 48px;
+}
+
+/* Form styles. */
+.hello-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.hello-input[type='text'] {
+  flex: 0 1 50%;
+  margin: 0;
+  min-width: 300px;
+  font-size: 16px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+}
+
+.hello-input[type='text']:focus,
+.hello-input[type='text']:active {
+  border-color: #C74933;
+}
+
+.button-submit {
+  margin: 0;
+  font-size: 14px;
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background: #C74933;
+}
+
+.button-submit:hover {
+  cursor: pointer;
+  background: #b60503;
+}
+
+/* Modal */
+.modal {
+  position: absolute;
+  background: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.1s;
+  z-index: -1;
+}
+
+.modal-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 50%;
+  min-height: 300px;
+  box-sizing: border-box;
+  padding: 2rem 50px;
+  opacity: 0;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 0.4rem;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+  transform: translateY(50%);
+  transition: transform 0.25s ease-out 0.2s, opacity 0.25s ease-out 0.1s;
+}
+
+.modal-text {
+  margin: 0;
+  font-size: 32px;
+}
+
+.modal--isActive {
+  opacity: 1;
+  z-index: 1;
+}
+
+.modal--isActive .modal-box {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+/* Spinner animation taken and modified from: http://tobiasahlin.com/spinkit/ */
+.spinner {
+  position: relative;
+  margin: 0 auto 30px;
+  width: 60px;
+  height: 60px;
+}
+
+.double-bounce1,
+.double-bounce2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 0.7;
+  background-color: #D26451;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  animation-delay: -1.0s;
+}
+
+@keyframes sk-bounce {
+  0%, 100% {
+    transform: scale(0.0);
+  } 50% {
+    transform: scale(1.0);
+  }
+}
