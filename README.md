@@ -18,6 +18,10 @@
 ### Testing
 Type `truffle test` to test.
 
+### Security
+* [Security Considerations](http://solidity.readthedocs.io/en/develop/security-considerations.html)
+* [Security Best Practices](https://github.com/ConsenSys/smart-contract-best-practices)
+
 ## Troubleshooting Tips
 * Is Ganache running?
 * Is your MetaMask account unlocked?
