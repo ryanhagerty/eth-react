@@ -15,6 +15,9 @@
 * Type `npm run start`
 * Put on a pair of sunglasses and bask in your blockchain glory. :beer:
 
+## Video Presentation/Demo
+[Here](https://www.youtube.com/watch?v=2c3PT9NuFJ8) we go over everything in this repo.
+
 ### Remember these steps when starting a new development session.
 1. Start Ganache.
 2. Unlock MetaMask with local RPC network.
